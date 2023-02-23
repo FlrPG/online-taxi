@@ -12,10 +12,10 @@ public class VerificationCodeController {
     @Autowired
     VerificationService verificationService;
 
-    @GetMapping("/verificationCode")
+    @GetMapping("/verification-code")
     public String verificationCode(@RequestBody VerificationCodeDTO verificationCodeDTO) {
         System.out.println("接收的手机号：" + verificationCodeDTO.getPassengerPhone());
-        String s = verificationService.generateCode(verificationCodeDTO.getPassengerPhone());
-        return "string";
+        String result = verificationService.generateCode(verificationCodeDTO.getPassengerPhone());
+        return result;
     }
 }
