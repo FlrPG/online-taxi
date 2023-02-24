@@ -1,8 +1,8 @@
 package com.lmzz.apipassenger.controller;
 
-import com.lmzz.apipassenger.request.VerificationCodeDTO;
 import com.lmzz.apipassenger.service.VerificationService;
 import com.lmzz.dto.ResponseResult;
+import com.lmzz.request.VerificationCodeDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;

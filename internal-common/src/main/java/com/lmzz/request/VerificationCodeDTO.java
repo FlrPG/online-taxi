@@ -1,4 +1,4 @@
-package com.lmzz.apipassenger.request;
+package com.lmzz.request;
 
 import lombok.Data;
 
