@@ -32,5 +32,6 @@ replay_pid*
 *.iml
 out
 gen
-/api-passenger/target/
 /target/
+/api-passenger/target/
+/internal-common/target/
