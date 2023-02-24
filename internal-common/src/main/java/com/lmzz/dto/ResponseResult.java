@@ -12,6 +12,12 @@ public class ResponseResult<T> {
 
     private T data;
 
+    public static <T> ResponseResult sucess() {
+        return new ResponseResult()
+                .setCode(ConmonStatusEnum.SUCCESS.getCode())
+                .setMessage(ConmonStatusEnum.SUCCESS.getValue());
+    }
+
     public static <T> ResponseResult sucess(T data) {
         return new ResponseResult()
                 .setCode(ConmonStatusEnum.SUCCESS.getCode())
